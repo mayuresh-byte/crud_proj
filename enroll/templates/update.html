@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %} addshow {% endblock title %}
+
+{% block body %}
+
+
+
+<div class="container">
+<div class="row"> 
+
+<div class="col-sm-6">
+<h4 class="text-center alert alert-info">Add New Student</h4>
+
+<form action="" method="POST">
+{% csrf_token %}
+    {{editstud.as_p}}
+<button type="submit" class="btn btn-success">Add</button>
+
+</form>
+</div>
+</div>
+</div>
+
+
+
+{% endblock body %}
